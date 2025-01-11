@@ -41,7 +41,33 @@ pandas==1.3.3
 opencv-python==4.5.3.56
 scikit-learn==0.24.2
 matplotlib==3.4.3
-# Additional dependencies may be required depending on the specific dataset and model configurations
+
+## Directory Structure
+The directory structure of the project is as follows:
+.
+├── train.py                # Main training script
+├── utils.py                # Utility functions for training and evaluation
+├── networks/               # Model network definitions
+│   └── net_factory.py      # Network factory module for model creation
+├── dataloaders/            # Data loading utilities
+│   └── dataset.py          # Dataset definitions and data processing
+├── utils/                  # Additional utility functions
+│   ├── ramps.py
+│   ├── losses.py
+│   ├── metrics.py
+│   └── test_patch.py
+├── model/                  # Model saving path
+├── data/                   # Dataset directory
+├── requirements.txt        # Required Python packages
+├── README.md               # Project documentation
+└── LICENSE                 # License information
+
+
+
+
+## Running the Training
+python train.py --dataset_name Pancreas --device cuda --root_path ../ --exp Mine --model mine_v4_test --max_iteration 15000 --max_samples 62 --labeled_bs 2 --batch_size 4 --base_lr 0.01 --deterministic 1 --labelnum 16 --seed 1337 --gpu 0 --consistency 1.25 --consistency_rampup 40.0 --temperature 0.1 --lamda 0.5 --beta 0.5 --N 1
+
 
 ## Contact Information
 If you have any questions or suggestions about this project, please contact me through email: `zhanghongyu22@mails.jlu.edu.cn` or QQ Group (Chinese): `906808850`.
