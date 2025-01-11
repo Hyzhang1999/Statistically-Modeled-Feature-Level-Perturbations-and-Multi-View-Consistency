@@ -7,13 +7,13 @@ S2MIS-SMFLP-MVC is a deep learning project designed for **semi-supervised medica
 ## Supported Datasets
 
 **(i) Left Atrium (LA) Dataset:**  
-A benchmark dataset for the *2018 Atrial Segmentation Challenge {http://atriaseg2018.cardiacatlas.org}, this dataset includes 100 gadolinium-enhanced **T1-weighted MRI** scans, each with an isotropic resolution of $0.625 \times 0.625 \times 0.625$ mm, providing detailed anatomical visualization of the left atrium.  80 samples are used for training, and the remaining 20 are used for testing.
+A benchmark dataset for the *2018 Atrial Segmentation Challenge* [here](http://atriaseg2018.cardiacatlas.org), this dataset includes 100 gadolinium-enhanced **T1-weighted MRI** scans, each with an isotropic resolution of $0.625 \times 0.625 \times 0.625$ mm, providing detailed anatomical visualization of the left atrium. 80 samples are used for training, and the remaining 20 are used for testing.
 
 **(ii) Pancreas-CT Dataset:**  
-A widely used dataset for abdominal imaging {https://wiki.cancerimagingarchive.net/display/Public/Pancreas-CT}, this dataset includes 82 contrast-enhanced **3D-CT** scans with a resolution of $512 \times 512$ pixels and slice thicknesses ranging from $1.5$ to $2.5$ mm. 62 samples are used for training, and 20 for testing. The images are clipped to a voxel value range of $[-125, 275]$ HU, resampled to an isotropic resolution of $1.0 \times 1.0 \times 1.0$ mm, and normalized to zero mean and unit variance.
+A widely used dataset for abdominal imaging [here](https://wiki.cancerimagingarchive.net/display/Public/Pancreas-CT), this dataset includes 82 contrast-enhanced **3D-CT** scans with a resolution of $512 \times 512$ pixels and slice thicknesses ranging from $1.5$ to $2.5$ mm. 62 samples are used for training, and 20 for testing. The images are clipped to a voxel value range of $[-125, 275]$ HU, resampled to an isotropic resolution of $1.0 \times 1.0 \times 1.0$ mm, and normalized to zero mean and unit variance.
 
 **(iii) BraTS-2019 Dataset:**  
-The BraTS dataset {https://www.med.upenn.edu/cbica/brats2019} contains preoperative MRI scans (modalities: T1, T1Gd, T2, and T2-FLAIR) from 335 glioma patients. In this study, we use **T2-FLAIR** images resampled to an isotropic resolution of $1.0 \times 1.0 \times 1.0$ mm.  250 samples are used for training, 25 for validation, and 60 for testing.
+The BraTS dataset [here](https://www.med.upenn.edu/cbica/brats2019) contains preoperative MRI scans (modalities: T1, T1Gd, T2, and T2-FLAIR) from 335 glioma patients. In this study, we use **T2-FLAIR** images resampled to an isotropic resolution of $1.0 \times 1.0 \times 1.0$ mm. 250 samples are used for training, 25 for validation, and 60 for testing.
 
 ## Important Notice
 
@@ -42,6 +42,7 @@ opencv-python==4.5.3.56
 scikit-learn==0.24.2
 matplotlib==3.4.3
 ```
+
 
 ## Directory Structure
 ```
